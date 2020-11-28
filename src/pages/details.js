@@ -9,7 +9,7 @@ export const Details = () => {
             <Container>
                 <Row>
                     <div>
-                        <SlickSlider slidesToShow={1} slidesToScroll={1}/>
+                        {/*<SlickSlider slidesToShow={1} slidesToScroll={1}/>*/}
                     </div>
                 </Row>
                 <Row>

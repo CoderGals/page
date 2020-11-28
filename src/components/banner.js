@@ -1,16 +1,21 @@
 import React from 'react';
-import {Container, Button, Row} from "react-bootstrap";
+import {Row} from "react-bootstrap";
+import BannerPhoto from '../images/banner';
+import { Button } from "react-bootstrap";
 
 export const Banner = () => {
     return (
         <div className="banner-component">
-            <Container>
-                <Row>
-                    <div>
-                        <Button variant="light">Apply Here</Button>
-                    </div>
-                </Row>
-            </Container>
+            <div className="banner-content">
+                <div>
+                    <p>CoderGals Hackathon 2020</p>
+                    <span>.CONNECT THE DOTS.</span>
+                </div>
+                <Button variant="light">Apply Now</Button>
+            </div>
+            <div>
+                <BannerPhoto/>
+            </div>
         </div>
     )
 }

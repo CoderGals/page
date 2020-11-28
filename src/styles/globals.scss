@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap');
 :root {
   background-color: #44384ee6;
   //--text-color:
@@ -14,11 +16,81 @@
 
 body {
   background-color: #44384ee6;
+
+  .header-component {
+    padding: 15px;
+    background-color: #44384e;
+
+    a {
+      font: normal normal bold Montserrat;
+      text-transform: uppercase;
+      text-decoration: none;
+      margin-right: 40px;
+      letter-spacing: 0;
+      font-size: 18px;
+      color: #918998;
+      opacity: 1;
+
+      &:first-child {
+        margin-left: 65px;
+      }
+
+      &.active {
+        color: #FFF0F0;
+      }
+
+      &:hover {
+        color: #FFF0F0;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .nav-component {
+    color: #FFF0F0;
+  }
+
+  .banner-component {
+    background-color: #44384E;
+
+    .banner-content {
+      position: absolute;
+      left: 324px;
+      top: 50%;
+      > div {
+        margin-bottom: 65px;
+        p {
+          font: normal normal bold 60px/75px Quicksand;
+          letter-spacing: 0;
+          margin-bottom: 0;
+          font-size: 50px;
+          color: #FFFFFF;
+          opacity: 1;
+        }
+
+        span {
+          font: normal normal bold 60px/75px Quicksand;
+          color: #00A0AB;
+          font-size: 40px;
+        }
+      }
+
+      button {
+        background: #FFF0F0 0% 0% no-repeat padding-box;
+        font: normal normal Montserrat;
+        font-weight: bold;
+        border-radius: 100px;
+        padding: 28px 73px;
+        font-size: 20px;
+        color: #44384E;
+      }
+    }
+  }
 }
 
 
 //@import 'components/components';
-@import 'components/header';
+//@import 'components/header';
 @import 'components/navigation';
 //@import 'components/banner';
 @import "~bootstrap/scss/bootstrap";
