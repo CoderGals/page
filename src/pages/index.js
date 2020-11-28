@@ -4,11 +4,13 @@ import {Banner} from "../components/banner";
 import Details from "./details";
 import Sponsors from "../components/sponsors";
 import Footer from "../components/footer";
+import Agenda from "../components/agenda";
 
 const Home = () => (
      <div>
          <Header/>
          <Banner/>
+         <Agenda/>
          <Details/>
          <Sponsors/>
          <Footer/>

@@ -86,6 +86,111 @@ body {
       }
     }
   }
+
+  .agenda-component {
+    margin-top: 40px;
+    .agenda-title {
+      margin-bottom: 40px;
+      h1 {
+        font: normal normal Montserrat;
+        font-weight: bold;
+        font-size: 60px;
+        color: #44384E;
+        opacity: 1;
+      }
+    }
+  }
+
+  .agenda-content {
+    button {
+      background: #FFF0F0 0 0 no-repeat padding-box;
+      font: normal normal Montserrat;
+      border-color: #FFF0F0;
+      border-radius: 100px;
+      padding: 21px 27px;
+      font-weight: bold;
+      font-size: 16px;
+      color: #44384E;
+      opacity: 1;
+
+      &:hover {
+        background: #44384E 0 0 no-repeat padding-box;
+        border-color: #FFF0F0;
+        color: #FFF0F0;
+      }
+    }
+  }
+
+  .agenda-content-cards {
+    .row {
+      border-bottom: 1px solid #918998;
+    }
+    .agenda-content-card-first, .agenda-content-card-second, .agenda-content-card-third, .agenda-content-card-fourth{
+      padding-bottom: 30px;
+      margin-top: 60px;
+      display: flex;
+
+      .agenda-content-time {
+        font: normal normal Montserrat;
+        white-space: nowrap;
+        margin-right: 100px;
+        font-weight: bold;
+        font-size: 16px;
+        color: #44384E;
+      }
+
+      .card-row {
+        display: flex;
+          .card {
+            background-color: #F8F5F9;
+            border-radius: 5px;
+            margin-right: 10px;
+            max-width: 240px;
+            border: 0;
+            .card-body {
+              .card-title {
+                font: normal normal Montserrat;
+                font-weight: bold;
+                font-size: 16px;
+                color: #44384E;
+              }
+
+              .card-text {
+                font: normal normal normal 16px/26px Montserrat;
+                padding-top: 12px;
+                font-size: 16px;
+                color: #44384E;
+              }
+
+              button {
+                font: normal normal Montserrat;
+                text-decoration: underline;
+                font-weight: bold;
+                background: none;
+                font-size: 16px;
+                padding-left: 0;
+                color: #00A0AB;
+                border: none;
+              }
+            }
+
+            &:hover {
+              background-color: #44384E;
+              cursor: pointer;
+              .card-body {
+                .card-title {
+                  color: #FFF0F0;
+                }
+
+                .card-text {
+                  color: #FFF0F0;
+                }
+              }
+            }
+          }
+      }
+    }
+  }
 }
 
 
