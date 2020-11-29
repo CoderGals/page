@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
-import {Container, Row, Button, Card} from 'react-bootstrap';
+import { Container, Row, Button, Card, Modal } from 'react-bootstrap';
 import agenda, { DEFAULT_SELECTED } from '../data/agenda';
 
 export const Agenda = () => {
     const [activeDay, setActiveDay] = useState(DEFAULT_SELECTED);
-    const day = agenda[activeDay];
+    const [activity, setActivity] = useState();
 
+    const day = agenda[activeDay];
+    console.log('activitiy')
     return (
+        <>
         <div className="agenda-component">
             <Container>
                 <Row>
@@ -42,7 +45,7 @@ export const Agenda = () => {
                                                     <Card.Text>
                                                         {activity.description}
                                                     </Card.Text>
-                                                    <Button>Read more</Button>
+                                                    <Button onClick={() => setActivity(activity) }>Read more</Button>
                                                 </Card.Body>
                                             </Card>
                                         ))}
@@ -54,6 +57,22 @@ export const Agenda = () => {
                 </div>
             </Container>
         </div>
+        {activity && (
+            <Modal show={true} onHide={() => setActivity(null) }>
+                <Modal.Header closeButton>
+                    <Modal.Title>{ activity.title }</Modal.Title>
+                </Modal.Header>
+
+                <Modal.Body>
+                    <p>{ activity.long_description }</p>
+                </Modal.Body>
+
+                <Modal.Footer>
+                    <Button onClick={() => setActivity(null) } variant="secondary">Close</Button>
+                </Modal.Footer>
+            </Modal>
+        )}
+        </>
     )
 }
 
