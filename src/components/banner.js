@@ -1,5 +1,4 @@
 import React from 'react';
-import {Row} from "react-bootstrap";
 import BannerPhoto from '../images/banner';
 import { Button } from "react-bootstrap";
 

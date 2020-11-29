@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap');
+
 :root {
-  background-color: #44384ee6;
+  background-color: #F9F5FC;
+  //background-color: #44384ee6;
   //--text-color:
   //--text-secondary:
   //--primary-color:
@@ -57,8 +59,10 @@ body {
       position: absolute;
       left: 324px;
       top: 50%;
+
       > div {
         margin-bottom: 65px;
+
         p {
           font: normal normal bold 60px/75px Quicksand;
           letter-spacing: 0;
@@ -88,9 +92,12 @@ body {
   }
 
   .agenda-component {
+    background-color: #F9F5FC;
     margin-top: 40px;
+
     .agenda-title {
       margin-bottom: 40px;
+
       h1 {
         font: normal normal Montserrat;
         font-weight: bold;
@@ -99,54 +106,56 @@ body {
         opacity: 1;
       }
     }
-  }
 
-  .agenda-content {
-    button {
-      background: #FFF0F0 0 0 no-repeat padding-box;
-      font: normal normal Montserrat;
-      border-color: #FFF0F0;
-      border-radius: 100px;
-      padding: 21px 27px;
-      font-weight: bold;
-      font-size: 16px;
-      color: #44384E;
-      opacity: 1;
-
-      &:hover {
-        background: #44384E 0 0 no-repeat padding-box;
-        border-color: #FFF0F0;
-        color: #FFF0F0;
-      }
-    }
-  }
-
-  .agenda-content-cards {
-    .row {
-      border-bottom: 1px solid #918998;
-    }
-    .agenda-content-card-first, .agenda-content-card-second, .agenda-content-card-third, .agenda-content-card-fourth{
-      padding-bottom: 30px;
-      margin-top: 60px;
-      display: flex;
-
-      .agenda-content-time {
+    .agenda-content {
+      button {
+        background: #FFF0F0 0 0 no-repeat padding-box;
         font: normal normal Montserrat;
-        white-space: nowrap;
-        margin-right: 100px;
+        border-color: #FFF0F0;
+        border-radius: 100px;
+        padding: 21px 27px;
         font-weight: bold;
         font-size: 16px;
         color: #44384E;
+        opacity: 1;
+
+        &:hover {
+          background: #44384E 0 0 no-repeat padding-box;
+          border-color: #FFF0F0;
+          color: #FFF0F0;
+        }
+      }
+    }
+
+    .agenda-content-cards {
+      .row {
+        border-bottom: 1px solid #918998;
       }
 
-      .card-row {
+      .agenda-content-card-first, .agenda-content-card-second, .agenda-content-card-third, .agenda-content-card-fourth {
+        padding-bottom: 30px;
+        margin-top: 60px;
         display: flex;
+
+        .agenda-content-time {
+          font: normal normal Montserrat;
+          white-space: nowrap;
+          margin-right: 100px;
+          font-weight: bold;
+          font-size: 16px;
+          color: #44384E;
+        }
+
+        .card-row {
+          display: flex;
+
           .card {
             background-color: #F8F5F9;
             border-radius: 5px;
             margin-right: 10px;
             max-width: 240px;
             border: 0;
+
             .card-body {
               .card-title {
                 font: normal normal Montserrat;
@@ -177,6 +186,7 @@ body {
             &:hover {
               background-color: #44384E;
               cursor: pointer;
+
               .card-body {
                 .card-title {
                   color: #FFF0F0;
@@ -188,6 +198,167 @@ body {
               }
             }
           }
+        }
+      }
+    }
+  }
+
+  .slider-component {
+    background-color: #F9F5FC;
+
+    .slick-slide > div {
+      transform: scale(.5);
+      transition: transform .3s cubic-bezier(.4, 0, .2, 1);
+    }
+
+    .slick-center > div {
+      transform: scale(1);
+    }
+
+    .slider__item > img {
+      width: 100%;
+      height: auto;
+    }
+
+    margin-top: 60px;
+
+    .slick-list {
+      padding: 0 30%;
+    }
+  }
+
+  .event-component {
+    background-color: #F9F5FC;
+
+    .event-content {
+      margin-top: 40px;
+      display: flex;
+
+      p {
+        font: normal normal Montserrat;
+        letter-spacing: 0;
+        font-weight: bold;
+        font-size: 60px;
+        color: #44384E;
+        opacity: 1;
+      }
+
+      > .event-text {
+        margin-top: 15%;
+        padding-right: 30px;
+
+        span {
+          font: normal normal normal 18px/26px Montserrat;
+          padding-right: 70px;
+          letter-spacing: 0;
+          color: #44384E;
+        }
+      }
+    }
+  }
+
+  .rules-component {
+    background-color: #44384E;
+    color: #FFF0F0;
+    padding: 60px;
+
+    .rules-title {
+      h1 {
+        font: normal normal bold 60px/73px Montserrat;
+      }
+    }
+
+    .rules-content {
+      p {
+        font: normal normal normal 18px/26px Montserrat;
+      }
+    }
+
+    button {
+      background: #FFF0F0 0 0 no-repeat padding-box;
+      font: normal normal Montserrat;
+      border-color: #FFF0F0;
+      border-radius: 100px;
+      padding: 21px 27px;
+      font-weight: bold;
+      font-size: 16px;
+      color: #44384E;
+      opacity: 1;
+
+      &:hover {
+        background: #44384E 0 0 no-repeat padding-box;
+        border-color: #FFF0F0;
+        color: #FFF0F0;
+      }
+    }
+  }
+
+  .details-component {
+    background-color: #F9F5FC;
+  }
+
+  .history-component {
+    background-color: #F9F5FC;
+    padding-top: 51px;
+
+    .history-title {
+      padding-bottom: 30px;
+
+      h1 {
+        font: normal normal 34px/42px Montserrat;
+        font-weight: bold;
+        color: #44384E;
+      }
+    }
+
+    .history-content {
+      display: flex;
+
+      .card {
+        background: #FFFFFF 0 0 no-repeat padding-box;
+        box-shadow: 0 0 10px #44384E1A;
+        border-radius: 5px;
+        margin-right: 30px;
+        max-width: 378px;
+        border: none;
+      }
+    }
+
+    .btn-div {
+      display: flex;
+      justify-content: center;
+
+      button {
+        margin-top: 60px;
+        background: #44384E 0 0 no-repeat padding-box;
+        font: normal normal Montserrat;
+        border-color: #FFF0F0;
+        border-radius: 100px;
+        padding: 21px 27px;
+        font-weight: bold;
+        font-size: 16px;
+        color: #FFF0F0;
+        opacity: 1;
+
+        &:hover {
+          background: #FFF0F0 0 0 no-repeat padding-box;
+          border-color: #FFF0F0;
+          color: #44384E;
+        }
+      }
+    }
+  }
+
+  .shop-component {
+    background-color: #F9F5FC;
+    padding-top: 60px;
+    display: flex;
+    .shop-content {
+      justify-content: center;
+      align-items: center;
+
+      .shop-text {
+        margin-left: 50px;
       }
     }
   }

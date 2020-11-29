@@ -6,15 +6,7 @@ export const Footer = () => {
         <div className="footer-component">
             <Container>
                 <Row>
-                    <div>
-                        <img src="https://via.placeholder.com/150/f https://placeholder.com/"/>
-                    </div>
-                    <div>
-                        <span>Text</span>
-                    </div>
-                    <div>
-                        Social media
-                    </div>
+
                 </Row>
             </Container>
         </div>
