@@ -1,13 +1,12 @@
 import React from "react";
 import { Navbar, Row } from "react-bootstrap";
-import Image from 'next/image'
 import Navigation from "./navigation";
 
 const Header = () => {
     return (
         <div className="header-component">
             <Navbar>
-                    <Image src="/assets/logo.png" alt="me" width="86px" height="86px"/>
+                    <img src="/assets/logo.png" alt="me" width="86px" height="86px" unoptimized/>
                 <Row>
                     <Navigation/>
                 </Row>
