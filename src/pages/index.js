@@ -10,8 +10,6 @@ import Rules from "../components/rules";
 import History from "../components/history";
 import Shop from "../components/shop";
 
-// https://docs.google.com/forms/d/e/1FAIpQLScjMT07W6xiFoWi0jdkTRVi703gqwCZJ4_e-RGfcFtOgM002w/viewform?usp=sf_link
-
 const Home = () => (
      <div>
          <Header/>
