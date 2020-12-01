@@ -1,7 +1,13 @@
 import React from 'react';
 import {Container, Button, Card} from "react-bootstrap";
-
+import history from "../data/history";
+import data from "../data/footer";
 export const History = () => {
+
+    const _goTo = (url) => {
+        window.open(url, '_blank');
+    };
+
     return (
         <div className="history-component">
             <Container>
@@ -10,44 +16,23 @@ export const History = () => {
                 </div>
 
                 <div className="history-content">
-                    <Card>
-                        <Card.Body>
-                            <Card.Title>
-                                Project title
-                            </Card.Title>
-                            <Card.Text>
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium. </Card.Text>
-                        </Card.Body>
-                    </Card>
-                    <Card>
-                        <Card.Body>
-                            <Card.Title>
-                                Project title
-                            </Card.Title>
-                            <Card.Text>
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium.
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
-                    <Card>
-                        <Card.Body>
-                            <Card.Title>
-                                Project title
-                            </Card.Title>
-                            <Card.Text>
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium.
-                            </Card.Text>
-                        </Card.Body>
-                    </Card>
+                    {history.map((project) => (
+                        <Card>
+                            <Card.Body>
+                                <Card.Title>
+                                    {project.title}
+                                </Card.Title>
+                                <Card.Text>
+                                    {project.description}
+                                </Card.Text>
+                                <Button onClick={() => _goTo(project.link) }>Read more</Button>
+                            </Card.Body>
+                        </Card>
+                    ))}
                 </div>
-
                 <div className="btn-div">
                     <Button>OUR BLOG</Button>
                 </div>
-
             </Container>
         </div>
     )
