@@ -29,7 +29,7 @@ const agenda = {
                     {
                         'title': 'Speaker Session',
                         'description': 'We will enjoy some time hearing from one of our supporters...',
-                        'long_description': 'This section will be dedicated to 15 - 20min speech of Agon Avdimetaj on ...'
+                        'long_description': 'This section will be dedicated to 15 - 20min speech of one of our speakers...'
                     }
                 ]
             },
