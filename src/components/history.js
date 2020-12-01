@@ -13,6 +13,7 @@ export const History = () => {
             <Container>
                 <div className="history-title">
                     <h1>Last Hackathon</h1>
+                    <span>Here are some projects you can view from our last edition which happened in 2017.</span>
                 </div>
 
                 <div className="history-content">
