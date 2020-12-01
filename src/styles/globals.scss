@@ -57,9 +57,10 @@ body {
 
     .banner-content {
       position: absolute;
-      left: 324px;
-      top: 50%;
-
+      //left: 424px;
+      //top: 35%;
+      left: 19vw;
+      top: 20vw;
       > div {
         margin-bottom: 65px;
 
@@ -67,15 +68,16 @@ body {
           font: normal normal bold 60px/75px Quicksand;
           letter-spacing: 0;
           margin-bottom: 0;
-          font-size: 50px;
+          font-size: 3vw;
           color: #FFFFFF;
           opacity: 1;
         }
-
         span {
           font: normal normal bold 60px/75px Quicksand;
           color: #00A0AB;
-          font-size: 40px;
+          svg {
+            width: 35.4vw;
+          }
         }
       }
 
