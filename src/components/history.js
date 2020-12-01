@@ -30,9 +30,6 @@ export const History = () => {
                         </Card>
                     ))}
                 </div>
-                <div className="btn-div">
-                    <Button>OUR BLOG</Button>
-                </div>
             </Container>
         </div>
     )

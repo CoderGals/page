@@ -93,7 +93,7 @@ body {
 
   .agenda-component {
     background-color: #F9F5FC;
-    margin-top: 40px;
+    padding-top: 40px;
 
     .agenda-title {
       margin-bottom: 40px;
@@ -108,16 +108,26 @@ body {
     }
 
     .agenda-content {
+      .active-agenda {
+        background: #44384E 0 0 no-repeat padding-box;
+        border-color: #FFF0F0;
+        color: #FFF0F0;
+      }
       button {
         background: #FFF0F0 0 0 no-repeat padding-box;
         font: normal normal Montserrat;
         border-color: #FFF0F0;
         border-radius: 100px;
         padding: 21px 27px;
+        margin-right: 40px;
         font-weight: bold;
         font-size: 16px;
         color: #44384E;
         opacity: 1;
+
+        &:focus {
+          outline: none
+        }
 
         &:hover {
           background: #44384E 0 0 no-repeat padding-box;
@@ -150,7 +160,7 @@ body {
           display: flex;
 
           .card {
-            background-color: #F8F5F9;
+            background-color: #ffffff;
             border-radius: 5px;
             margin-right: 10px;
             max-width: 240px;
@@ -244,7 +254,7 @@ body {
       }
 
       > .event-text {
-        margin-top: 15%;
+        padding-bottom: 40px;
         padding-right: 30px;
 
         span {
@@ -269,8 +279,13 @@ body {
     }
 
     .rules-content {
+      strong {
+        font-size: 17px;
+      }
+
       p {
         font: normal normal normal 18px/26px Montserrat;
+        color: #44384E;
       }
     }
 
@@ -321,6 +336,7 @@ body {
         margin-right: 30px;
         max-width: 350px;
         border: none;
+
         button {
           font: normal normal Montserrat;
           text-decoration: underline;
@@ -331,6 +347,7 @@ body {
           color: #00A0AB;
           border: none;
         }
+
         &:hover {
           background-color: #44384E;
           cursor: pointer;
@@ -427,6 +444,7 @@ body {
       }
     }
   }
+
   //.shop-component {
   //  background-color: #F9F5FC;
   //  padding-top: 60px;
@@ -445,17 +463,18 @@ body {
     background-color: #44384E;
     text-align: center;
     padding: 70px 90px;
-      p {
-        font: normal normal normal 16px/19px Montserrat;
-        letter-spacing: 0;
-        padding: 26px 26px;
-        color: #FFF0F0;
-        opacity: 1;
-      }
 
-      .social-media {
-        cursor: pointer;
-      }
+    p {
+      font: normal normal normal 16px/19px Montserrat;
+      letter-spacing: 0;
+      padding: 26px 26px;
+      color: #FFF0F0;
+      opacity: 1;
+    }
+
+    .social-media {
+      cursor: pointer;
+    }
   }
 }
 

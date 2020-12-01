@@ -49,7 +49,7 @@ const agenda = {
                 ]
             },
             {
-                'time': '18:00 - 20',
+                'time': '18:00 - 20:00',
                 'activities': [
                     {
                         'title': 'Start hacking!',

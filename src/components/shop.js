@@ -13,7 +13,7 @@ export const Shop = () => {
                             <p>CoderGals Shop</p>
                             <span>Keep contributing to open source & we will see you next year!  </span>
                             <div className={"btn-div"}>
-                                <Button>Coming soon</Button>
+                                <Button disabled>Coming soon</Button>
                             </div>
                         </div>
                         <div>
