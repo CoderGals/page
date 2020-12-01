@@ -23,6 +23,10 @@ body {
     padding: 15px;
     background-color: #44384e;
 
+    .navbar-collapse {
+      text-align: center;
+    }
+
     a {
       font: normal normal bold Montserrat;
       text-transform: uppercase;
@@ -32,10 +36,6 @@ body {
       font-size: 18px;
       color: #918998;
       opacity: 1;
-
-      &:first-child {
-        margin-left: 65px;
-      }
 
       &.active {
         color: #FFF0F0;
@@ -49,7 +49,11 @@ body {
   }
 
   .nav-component {
-    color: #FFF0F0;
+    div {
+      a {
+        color: #918998 !important;
+      }
+    }
   }
 
   .banner-component {

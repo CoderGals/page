@@ -6,7 +6,7 @@ import Slogan from '../images/slogan';
 
 export const Banner = () => {
     return (
-        <div className="banner-component">
+        <div className="banner-component  d-none d-lg-block">
             <div className="banner-content">
                 <div>
                     <p>CoderGals Hackathon 2020</p>
