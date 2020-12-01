@@ -1,4 +1,6 @@
 import React from "react";
+import Head from 'next/head'
+
 import Header from "../components/header";
 import {Banner} from "../components/banner";
 import Details from "./details";
@@ -12,6 +14,10 @@ import Shop from "../components/shop";
 
 const Home = () => (
      <div>
+         <Head>
+             <title>Connect the dots</title>
+             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+         </Head>
          <Header/>
          <Banner/>
          <Agenda/>

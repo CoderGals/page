@@ -45,7 +45,7 @@ export const Agenda = () => {
                                                     <Card.Text>
                                                         {activity.description}
                                                     </Card.Text>
-                                                    <Button onClick={() => setActivity(activity) }>Read more</Button>
+                                                    {activity.long_description && <Button onClick={() => setActivity(activity) }>Read more</Button>}
                                                 </Card.Body>
                                             </Card>
                                         ))}
@@ -64,7 +64,7 @@ export const Agenda = () => {
                 </Modal.Header>
 
                 <Modal.Body>
-                    <p>{ activity.long_description }</p>
+                    <p>{ activity.long_description.split('\n').map(line => (<p>{line}</p>)) }</p>
                 </Modal.Body>
 
                 <Modal.Footer>
