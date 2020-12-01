@@ -3,7 +3,7 @@ import {Container, Row, Button} from "react-bootstrap";
 
 export const Rules = () => {
     return (
-        <div className="rules-component">
+        <div id="rules" className="rules-component">
             <Container>
                 <Row>
                     <div className="rules-title">

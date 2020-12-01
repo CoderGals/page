@@ -8,9 +8,9 @@ const Navigation = () => {
             <nav className="navbar" id="navbar">
                 <div className="navbar-primary">
                     <Nav className="mr-auto">
-                        <Link href="/" activeClassName="active" className="nav-link" exact>Resources</Link>
-                        <Link href="/about">About page</Link>
-                        <Link href="/events">Events page</Link>
+                        <Link href="#agenda" activeClassName="active" className="nav-link" exact>Agenda</Link>
+                        <Link href="#event-details">Event details</Link>
+                        <Link href="#rules">Rules</Link>
                     </Nav>
                 </div>
             </nav>

@@ -2,6 +2,7 @@ import React from 'react';
 import BannerPhoto from '../images/banner';
 import { Button } from "react-bootstrap";
 import data from '../data/banner';
+import Slogan from '../images/slogan';
 
 export const Banner = () => {
     return (
@@ -9,7 +10,7 @@ export const Banner = () => {
             <div className="banner-content">
                 <div>
                     <p>CoderGals Hackathon 2020</p>
-                    <span>.CONNECT THE DOTS.</span>
+                    <span><Slogan /> </span>
                 </div>
                 <Button
                     variant="light"

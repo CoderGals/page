@@ -4,7 +4,7 @@ import Ilustration from '../images/event-illustration';
 
 export const Event = () => {
     return (
-        <div className="event-component">
+        <div id="event-details" className="event-component">
             <Container>
                 <Row>
                     <div className="event-content">
