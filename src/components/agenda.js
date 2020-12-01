@@ -10,7 +10,7 @@ export const Agenda = () => {
     console.log('activitiy')
     return (
         <>
-        <div className="agenda-component">
+        <div id="agenda" className="agenda-component">
             <Container>
                 <Row>
                     <div className="agenda-title">
