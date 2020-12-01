@@ -7,7 +7,7 @@ const agenda = {
                 'activities': [
                     {
                         'title': 'Opening Ceremony',
-                        'description': 'Welcoming words by the organizers...!',
+                        'description': 'Welcoming words by the organizers...',
                         'long_description': 'We will have a short session for our welcome ceremony. We will start with a short introduction from the organizing team, a presentation of the main agenda, and expected final submission.\n' +
                             '\n' + '1.1 Stakeholder involvement: Introduction of supporting individuals and institutions.\n'+
                             '\n' + '1.2 Mentoring: Introduction of mentors, their area of expertise, and their role during the hackathon'},
@@ -168,7 +168,7 @@ const agenda = {
                 'activities': [
                     {
                         'title': 'Team - Mentor meeting',
-                        'description': 'First and final mentor checkpoint for the day before the great pitch...!',
+                        'description': 'First and final mentor checkpoint for the day before the great pitch...',
                         'long_description': ''
                     },
                 ]
