@@ -447,19 +447,18 @@ body {
     }
   }
 
-  //.shop-component {
-  //  background-color: #F9F5FC;
-  //  padding-top: 60px;
-  //  display: flex;
-  //  .shop-content {
-  //    justify-content: center;
-  //    align-items: center;
-  //
-  //    .shop-text {
-  //      margin-left: 50px;
-  //    }
-  //  }
-  //}
+  .modal-dialog {
+    .modal-content {
+      .modal-header {
+        border-bottom: 0;
+      }
+      .modal-footer {
+        button {
+          background-color: #44384e;
+        }
+      }
+    }
+  }
 
   .footer-component {
     background-color: #44384E;
