@@ -103,6 +103,9 @@ body {
   .agenda-component {
     background-color: #F9F5FC;
     padding-top: 40px;
+    .banner-mobile {
+      display: none;
+    }
 
     .agenda-title {
       margin-bottom: 40px;
@@ -487,9 +490,13 @@ body {
     }
   }
 
+  .sponsor-component {
+    //background-color: #F9F5FC;
+    padding: 40px;
+  }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   body {
     .agenda-component {
       .agenda-title {
