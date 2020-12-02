@@ -491,7 +491,6 @@ body {
   }
 
   .sponsor-component {
-    //background-color: #F9F5FC;
     padding: 40px;
   }
 }
@@ -571,6 +570,10 @@ body {
     }
 
     .shop-component {
+      display: none;
+    }
+
+    .sponsor-component {
       display: none;
     }
 
