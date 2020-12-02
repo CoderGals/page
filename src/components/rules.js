@@ -4,12 +4,9 @@ import {Container, Row, Button} from "react-bootstrap";
 export const Rules = () => {
     return (
         <div id="rules" className="rules-component">
-            {/*<div className="rules-title">*/}
-            {/*    <h1>Rules</h1>*/}
-            {/*</div>*/}
             <Container>
                 <Row>
-                    <div className="col-6">
+                    <div className="col-lg-6">
                         <div className="rules-content">
                             <strong>Can I apply?</strong>
                             <br/>
@@ -21,7 +18,7 @@ export const Rules = () => {
                             </span>
                         </div>
                     </div>
-                    <div className="col-6">
+                    <div className="col-lg-6">
                         <div className="rules-content">
                             <strong>Are there any limitations?</strong>
                             <br/>

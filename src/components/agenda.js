@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Button, Card, Modal } from 'react-bootstrap';
 import agenda, { DEFAULT_SELECTED } from '../data/agenda';
+import data from "../data/banner";
 
 export const Agenda = () => {
     const [activeDay, setActiveDay] = useState(DEFAULT_SELECTED);
@@ -12,6 +13,16 @@ export const Agenda = () => {
         <>
         <div id="agenda" className="agenda-component">
             <Container>
+                <div className="banner-mobile">
+                    <div className="banner-content">
+                        <Button
+                            variant="light"
+                            onClick={() => {
+                                window.open(data.apply_now, '_blank');
+                            }}
+                        >Apply Now</Button>
+                    </div>
+                </div>
                 <Row>
                     <div className="agenda-title">
                         <h1>Agenda</h1>

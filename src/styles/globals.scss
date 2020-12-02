@@ -65,6 +65,7 @@ body {
       //top: 35%;
       left: 19vw;
       top: 20vw;
+
       > div {
         margin-bottom: 65px;
 
@@ -76,9 +77,11 @@ body {
           color: #FFFFFF;
           opacity: 1;
         }
+
         span {
           font: normal normal bold 60px/75px Quicksand;
           color: #00A0AB;
+
           svg {
             width: 35.4vw;
           }
@@ -119,6 +122,7 @@ body {
         border-color: #FFF0F0;
         color: #FFF0F0;
       }
+
       button {
         background: #FFF0F0 0 0 no-repeat padding-box;
         font: normal normal Montserrat;
@@ -456,6 +460,7 @@ body {
       .modal-header {
         border-bottom: 0;
       }
+
       .modal-footer {
         button {
           background-color: #44384e;
@@ -480,6 +485,88 @@ body {
     .social-media {
       cursor: pointer;
     }
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    .agenda-component {
+      .agenda-title {
+        margin: 0 auto;
+      }
+
+      .agenda-content {
+        text-align: center;
+
+        button {
+          margin-bottom: 20px;
+          margin-right: 0;
+        }
+      }
+
+      .agenda-content-cards {
+        .agenda-content-card-first, .agenda-content-card-second, .agenda-content-card-third, .agenda-content-card-fourth {
+          .agenda-content-time {
+            margin-right: 0;
+          }
+
+          flex-direction: column;
+          text-align: center;
+          display: flex;
+          width: 100%;
+
+          .card-row {
+            justify-content: center;
+            display: flex;
+          }
+        }
+      }
+
+      .banner-mobile {
+        justify-content: center;
+        margin-bottom: 20px;
+        display: flex;
+
+        .banner-content {
+          button {
+            background: #FFF0F0 0 0 no-repeat padding-box;
+            font: normal normal Montserrat;
+            border-radius: 100px;
+            padding: 20px 40px;
+            font-weight: bold;
+            font-size: 20px;
+            color: #44384E;
+          }
+        }
+      }
+    }
+
+    .details-component {
+      display: none;
+    }
+
+    .event-component {
+      .event-content {
+        svg {
+          display: none;
+        }
+
+        .event-text {
+          padding-right: 0;
+          text-align: center;
+        }
+      }
+    }
+
+    .history-component {
+      display: none;
+    }
+
+    .shop-component {
+      display: none;
+    }
+
   }
 }
 
