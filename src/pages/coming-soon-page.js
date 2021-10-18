@@ -8,7 +8,7 @@ export const ComingSoon = () => {
             <Container>
                 <Row>
                     <div>
-                        <h1>We will be publishing new event soon!</h1>
+                        <h1>We will be publishing new events soon!</h1>
                     </div>
                 </Row>
             </Container>
