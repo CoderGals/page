@@ -5,7 +5,7 @@ import Header from "../components/header";
 
 const About = () => {
     return (
-        <div className="about-component">
+        <div className="about-us">
             <Header/>
             <h1>About it's here</h1>
         </div>

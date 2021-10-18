@@ -9,7 +9,8 @@ const Navigation = () => {
                 <nav className="navbar" id="navbar">
                     <div className="navbar-primary">
                         <Nav className="mr-auto">
-                            <Link href="#agenda" activeClassName="active" className="nav-link" exact>Agenda</Link>
+                            <Link href="#about-us" activeClassName="active" className="nav-link" exact>About Us</Link>
+                            <Link href="#agenda">Agenda</Link>
                             <Link href="#event-details">Event details</Link>
                             <Link href="#rules">Rules</Link>
                         </Nav>

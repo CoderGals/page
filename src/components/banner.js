@@ -18,6 +18,7 @@ export const Banner = () => {
                         onClick={() => {
                             window.open(data.apply_now, '_blank');
                         }}
+                        disabled
                     >Apply Now</Button>
                 </div>
                 <div>

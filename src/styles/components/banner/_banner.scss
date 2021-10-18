@@ -1,0 +1,39 @@
+@import "src/styles/base/variables";
+@import "src/styles/base/mixins";
+
+.banner-component {
+  background-color: $secondary-color;
+
+  .banner-content {
+    @include bannerContent();
+    > div {
+      margin-bottom: 65px;
+
+      p {
+        font: $font-family-p;
+        @include paragraph();
+        font-size: 3vw;
+        color: #FFFFFF;
+      }
+
+      span {
+        font: $font-family-p;
+        color: $span-color;
+
+        svg {
+          width: 35.4vw;
+        }
+      }
+    }
+
+    button {
+      background: #FFF0F0 0% 0% no-repeat padding-box;
+      font: normal normal Montserrat;
+      font-weight: bold;
+      border-radius: 100px;
+      padding: 28px 73px;
+      font-size: 20px;
+      color: #44384E;
+    }
+  }
+}

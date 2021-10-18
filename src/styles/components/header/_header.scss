@@ -1,0 +1,27 @@
+@import "src/styles/base/variables";
+@import "src/styles/base/mixins";
+
+.header-component {
+  background-color: $secondary-color;
+  padding: 15px;
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  a {
+    color: $primary-dark-color;
+    @include textOverlay();
+    font: $font-family;
+    margin-right: 40px;
+
+    &.active {
+      color: $primary-color;
+    }
+
+    &:hover {
+      color: $primary-color;
+      text-decoration: none;
+    }
+  }
+}

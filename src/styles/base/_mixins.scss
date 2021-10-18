@@ -1,0 +1,19 @@
+@mixin textOverlay() {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  font-size: 18px;
+  opacity: 1;
+}
+
+@mixin bannerContent() {
+  position: absolute;
+  left: 19vw;
+  top: 20vw;
+}
+
+@mixin paragraph() {
+  letter-spacing: 0;
+  margin-bottom: 0;
+  opacity: 1;
+}

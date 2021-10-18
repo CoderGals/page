@@ -6,11 +6,11 @@ import {Banner} from "../components/banner";
 import Details from "./details";
 import Sponsors from "../components/sponsors";
 import Footer from "../components/footer";
-import Agenda from "../components/agenda";
 import Event from "../components/event-details";
 import Rules from "../components/rules";
 import History from "../components/history";
 import Shop from "../components/shop";
+import ComingSoon from "./coming-soon-page";
 
 const Home = () => (
      <div>
@@ -20,7 +20,8 @@ const Home = () => (
          </Head>
          <Header/>
          <Banner/>
-         <Agenda/>
+         {/*<Agenda/>*/}
+         <ComingSoon/>
          <Details/>
          <Event/>
          <Rules/>

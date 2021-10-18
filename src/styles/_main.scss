@@ -1,52 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap');
+@import 'components/header/main';
+@import 'components/banner/main';
+@import 'layout/pages/coming-soon-page';
 
 :root {
   background-color: #F9F5FC;
-  //background-color: #44384ee6;
-  //--text-color:
-  //--text-secondary:
-  //--primary-color:
-  //
-  //--background-color:
-  //--background-color-light:
-  //--background-color-dark:
-  //
-  //--font-family:
-  //--box-shadow:
 }
 
 body {
   background-color: #44384ee6;
-
-  .header-component {
-    padding: 15px;
-    background-color: #44384e;
-
-    .navbar-collapse {
-      text-align: center;
-    }
-
-    a {
-      font: normal normal bold Montserrat;
-      text-transform: uppercase;
-      text-decoration: none;
-      margin-right: 40px;
-      letter-spacing: 0;
-      font-size: 18px;
-      color: #918998;
-      opacity: 1;
-
-      &.active {
-        color: #FFF0F0;
-      }
-
-      &:hover {
-        color: #FFF0F0;
-        text-decoration: none;
-      }
-    }
-  }
 
   .nav-component {
     div {
@@ -56,52 +19,8 @@ body {
     }
   }
 
-  .banner-component {
-    background-color: #44384E;
-
-    .banner-content {
-      position: absolute;
-      //left: 424px;
-      //top: 35%;
-      left: 19vw;
-      top: 20vw;
-
-      > div {
-        margin-bottom: 65px;
-
-        p {
-          font: normal normal bold 60px/75px Quicksand;
-          letter-spacing: 0;
-          margin-bottom: 0;
-          font-size: 3vw;
-          color: #FFFFFF;
-          opacity: 1;
-        }
-
-        span {
-          font: normal normal bold 60px/75px Quicksand;
-          color: #00A0AB;
-
-          svg {
-            width: 35.4vw;
-          }
-        }
-      }
-
-      button {
-        background: #FFF0F0 0% 0% no-repeat padding-box;
-        font: normal normal Montserrat;
-        font-weight: bold;
-        border-radius: 100px;
-        padding: 28px 73px;
-        font-size: 20px;
-        color: #44384E;
-      }
-    }
-  }
-
   .agenda-component {
-    background-color: #F9F5FC;
+    //background-color: #F9F5FC;
     padding-top: 40px;
     .banner-mobile {
       display: none;
@@ -227,8 +146,6 @@ body {
   }
 
   .slider-component {
-    background-color: #F9F5FC;
-
     .slick-slide > div {
       transform: scale(.5);
       transition: transform .3s cubic-bezier(.4, 0, .2, 1);
@@ -580,9 +497,5 @@ body {
   }
 }
 
-
-//@import 'components/components';
-//@import 'components/header';
 @import 'components/navigation';
-//@import 'components/banner';
 @import "~bootstrap/scss/bootstrap";
