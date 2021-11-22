@@ -8,9 +8,9 @@ export const About = () => {
                 <Row>
                     <div className="pt-3">
                         <div><h2>Who are we?</h2></div>
-                        <div><p>We are <strong>CoderGals</strong>, an organization which represents a group of people
+                        <div><p>We are <strong>CoderGals</strong>, an organization that represents a group of people
                             coming from a
-                            development country, with the enthusiasm of building exciting things using technology.</p>
+                            developing country, with the enthusiasm of building exciting things using technology.</p>
                         </div>
                         <div><p>Our initial goal was to enhance the presence of girls/women in the IT field, empower
                             them to be part of the tech industry, but due to the extensive requests for our events,
@@ -22,7 +22,7 @@ export const About = () => {
                             </p>
                         </div>
                         <div>
-                            <p>Many interesting things have happen since then :)</p>
+                            <p>Many interesting things have happened since then :)</p>
                             <p>Please take a look at these links to learn more about us:</p>
                             <a href="https://dev.to/codergalsks/debian-os-conference-2021-in-kosovo-4om8"
                                target="_blank">CoderGals
