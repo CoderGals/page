@@ -10,7 +10,7 @@ export const Rules = () => {
                         <div className="rules-content">
                             <strong>Can I apply?</strong>
                             <br/>
-                            <span>If you're a Software Engineer with up to 2 years of experience in Web/Mobile development, than YES!.
+                            <span>If you're a Software Engineer with up to 2 years of experience in Web/Mobile development, than YES!
                                     <br/>
                                     <br/>
                                     <br/>

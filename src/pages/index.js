@@ -11,6 +11,7 @@ import Rules from "../components/rules";
 import History from "../components/history";
 import Shop from "../components/shop";
 import ComingSoon from "./coming-soon-page";
+import About from "./../pages/about";
 
 const Home = () => (
      <div>
@@ -21,6 +22,7 @@ const Home = () => (
          <Header/>
          <Banner/>
          {/*<Agenda/>*/}
+         <About/>
          <ComingSoon/>
          <Details/>
          <Event/>
